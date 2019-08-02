@@ -8,7 +8,7 @@ setup(name=about["__title__"],
       description=about["__summary__"],
       url="TBD",
       packages=['withtimer'],
-      python_requires='>=3.7',
+      python_requires='>=2.7',
       install_requires=[],
       package_data={'withtimer': ['config/*']},
       )
