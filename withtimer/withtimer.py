@@ -16,6 +16,8 @@ class Timer(object):
             self.start()
 
     def start(self):
+        if self.started:
+            return
         depth = len(self.timer_stack)
         if depth >= self.max_depth:
             return
