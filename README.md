@@ -63,3 +63,25 @@ if __name__ == "__main__":
                 func1(i+1)
 
 ```
+
+Output:
+
+```console
+$ python3  ./example.py
+[main] start
+    [Calling func2] start
+func2 sleeping 2
+    [Calling func2] end	Elapsed time: 2.003 seconds
+
+    [Calling func2] start
+func2 sleeping 2
+    [Calling func2] end	Elapsed time: 2.003 seconds
+
+    [Calling func2] start
+func2 sleeping 2
+    [Calling func2] end	Elapsed time: 2.003 seconds
+
+func1 sleeping 2
+[main] end	Elapsed time: 8.015 seconds
+$
+```
