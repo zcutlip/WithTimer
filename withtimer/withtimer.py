@@ -19,7 +19,7 @@ class Timer(object):
         """
         if not name:
             depth = len(self.timer_stack)
-            name = "timer %d" % depth + 1
+            name = "timer %d" % (depth + 1)
         self.name = name
         self.started = False
         if self.timing_enabled:
