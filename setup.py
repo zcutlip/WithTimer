@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from setuptools import setup
 about = {}
 with open("withtimer/__about__.py") as fp:
