@@ -14,7 +14,7 @@ class Timer(object):
         and ends when it goes out of scope.
 
         Arguments:
-            - 'name': Optional name to give the timer. 
+            - 'name': Optional name to give the timer.
                     Defaults ot "timer <n>" where this is the nth timer on the stack.
         """
         if not name:
