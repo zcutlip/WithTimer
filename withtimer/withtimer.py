@@ -7,6 +7,14 @@ class Timer(object):
     timing_enabled = False
 
     def __init__(self, name=None):
+        """
+        Create a Timer object. If timing is enabled, the timer starts on instantiation,
+        and ends when it goes out of scope.
+
+        Arguments:
+            - 'name': Optional name to give the timer. 
+                    Defaults ot "timer <n>" where this is the nth timer on the stack.
+        """
         if not name:
             depth = len(self.timer_stack)
             name = "timer %d" % depth + 1
@@ -61,6 +69,14 @@ class Timer(object):
 
     @classmethod
     def enable_timing(cls, do_time, max_depth=10000):
+        """
+        Enable (or disable) timing for all timers not already started.
+
+        Arguments:
+            - 'do_time': Boolean to enable or disable timing.
+            - 'max_depth': Maximum depth of the timer stack. Timers beyond max_depth will not start.
+                           Defaults to 10000
+        """
         cls.timing_enabled = do_time
         if do_time:
             cls.max_depth = max_depth
