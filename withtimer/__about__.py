@@ -1,5 +1,5 @@
 __title__ = "withtimer"
-__version__ = "0.1.0.dev0"
+__version__ = "0.1.0.dev1"
 __summary__ = "Simple Python Timer class you can wrap around blocks of code you want to benchmark"
 
 """
