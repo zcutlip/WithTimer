@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from __future__ import print_function
 from time import sleep
 from withtimer.withtimer import Timer
 
