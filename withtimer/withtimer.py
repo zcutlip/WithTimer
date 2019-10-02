@@ -4,6 +4,7 @@ from timeit import default_timer
 class Timer(object):
     timer_stack = []
     max_depth = 0
+    timing_enabled = False
 
     def __init__(self, name=None):
         if not name:
